@@ -33,3 +33,8 @@ def register():
 def login():
     form = LoginForm()
     return render_template('login.html', title='Login', form=form)
+
+
+@app.route('/draw', methods=['GET', 'POST'])
+def draw():
+    return render_template('draw.html')
